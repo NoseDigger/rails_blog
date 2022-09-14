@@ -1,0 +1,9 @@
+<p>Comment by: <%= comment.user.email%></p>
+<% if current_user == comment.user%>
+ <span>Comment: <strong><%= comment.body%></strong></span>
+ <%= button_to "Delete Comment",[post,comment],class: 'btn btn-danger',method: :delete%><br>
+  <%= link_to "Edit Comment",edit_post_comment_path(post, comment),method: :put,class: 'btn btn-secondary'%>
+ <% else%>
+ <span>Comment: <strong><%= comment.body%></strong></span>
+<p>Posted <%= time_ago_in_words(comment.created_at)%> ago</p>
+ <%end%>

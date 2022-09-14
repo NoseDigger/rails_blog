@@ -1,4 +1,10 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Hello</h1>
+<% if user_signed_in?%>
+  <h3><%= current_user.email%></h3>
+  <%else%>
+   <h3>Guest</h3>
+<%end%>
 <%= link_to 'About Me',about_path,class:'btn btn-secondary'%>
+<% if user_signed_in?%>
 <%= link_to 'Create Blog',posts_path,class:'btn btn-primary'%>
+<%end%>
