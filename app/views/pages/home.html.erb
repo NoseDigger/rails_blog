@@ -4,7 +4,7 @@
   <%else%>
    <h3>Guest</h3>
 <%end%>
-<%= link_to 'About Me',about_path,class:'btn btn-secondary'%>
+<%= link_to 'About Blog',about_path,class:'btn btn-secondary'%>
 <% if user_signed_in?%>
 <%= link_to 'Create Blog',posts_path,class:'btn btn-primary'%>
 <%end%>
