@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Blog Site
 
 Things you may want to cover:
 
-* Ruby version
+- Users can create or login accout can also sign out or cancel account
 
-* System dependencies
+- Create CRUD operations for post and comments
 
-* Configuration
+- Users can create post comment on other users post
 
-* Database creation
+- If the post is created by user 1 user 2 cannot edit or delete it same goes for comments.
 
-* Database initialization
+- Guest can only see posts and comments of users but cannot create their own post or comments
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- ...
